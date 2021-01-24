@@ -5,3 +5,14 @@ Public int max(int a, int b){
 	else:
 	  return b;
 }
+
+#A00442518
+//only for positive b
+public int pow(int a,int b){
+	int r=1;
+	for(int i=b;i>0;i--)
+	{
+		r=r*a;
+	}
+	return r;
+}
