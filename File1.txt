@@ -1,5 +1,5 @@
 #A00444913
-Public int addition(int a, intb){
+Public int addition(int a, int b){
 	return a+b;
 }
 
