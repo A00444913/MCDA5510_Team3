@@ -13,3 +13,11 @@ public int max(int a, int b){
 	else
 		return b;
 }
+
+#A00447002
+public int mod(int a, int b){
+	if b=0:
+           return False;
+	else
+		return (a/b)*100;
+}

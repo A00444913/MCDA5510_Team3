@@ -16,3 +16,9 @@ public int pow(int a,int b){
 	}
 	return r;
 }
+
+#A00447002
+Public int max(int a, int b){
+
+	  return (a+b)/2;
+}
