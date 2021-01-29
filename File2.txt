@@ -1,8 +1,3 @@
-#A00444913
-Public int division(int a,int b){
-	return a/b;
-}
-
 #A00442518
 public int max(int a, int b){
 	if(a>b)
