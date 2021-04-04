@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yangjinting/Desktop/git/MCDA5540_Team3/Team3_GHotel/Team3_GHotel/Team3_GHotel.csproj",
+      "projectUniqueName": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/Team3_GHotel/Team3_GHotel/Team3_GHotel.csproj",
       "projectName": "Team3_GHotel",
-      "projectPath": "/Users/yangjinting/Desktop/git/MCDA5540_Team3/Team3_GHotel/Team3_GHotel/Team3_GHotel.csproj",
+      "projectPath": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/Team3_GHotel/Team3_GHotel/Team3_GHotel.csproj",
       "packagesPath": "/Users/yangjinting/.nuget/packages/",
-      "outputPath": "/Users/yangjinting/Desktop/git/MCDA5540_Team3/Team3_GHotel/Team3_GHotel/obj/",
+      "outputPath": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/Team3_GHotel/Team3_GHotel/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yangjinting/.config/NuGet/NuGet.Config"
