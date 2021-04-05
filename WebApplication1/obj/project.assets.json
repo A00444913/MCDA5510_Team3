@@ -6141,26 +6141,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "/Users/yangjinting/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\dotnet\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/WebApplication1/WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "F:\\dotnet\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\dotnet\\WebApplication1\\obj\\",
+      "projectPath": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/WebApplication1/WebApplication1.csproj",
+      "packagesPath": "/Users/yangjinting/.nuget/packages/",
+      "outputPath": "/Users/yangjinting/Desktop/git/MCDA5510_Team3/WebApplication1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/yangjinting/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6218,7 +6216,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }
