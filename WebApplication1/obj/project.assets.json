@@ -6141,19 +6141,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\Johnny\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\dotnet\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Johnny\\Desktop\\MCDA5510_Team3\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "F:\\dotnet\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\dotnet\\WebApplication1\\obj\\",
+      "projectPath": "C:\\Users\\Johnny\\Desktop\\MCDA5510_Team3\\WebApplication1\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\Johnny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Johnny\\Desktop\\MCDA5510_Team3\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Johnny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6218,7 +6222,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
