@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dotnet\\project\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {}
+    "F:\\dotnet\\project\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {}
   },
   "projects": {
-    "F:\\dotnet\\project\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {
+    "F:\\dotnet\\project\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dotnet\\project\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+        "projectUniqueName": "F:\\dotnet\\project\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
         "projectName": "HotelReservation",
-        "projectPath": "F:\\dotnet\\project\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+        "projectPath": "F:\\dotnet\\project\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\dotnet\\project\\HotelReservation\\HotelReservation\\obj\\",
+        "outputPath": "F:\\dotnet\\project\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
