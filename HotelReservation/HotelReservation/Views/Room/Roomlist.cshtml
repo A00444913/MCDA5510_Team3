@@ -1,5 +1,38 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Room list";
 }
+<style>
+    body {
+        align-content: center;
+        align-items: center;
+    }
+    .roomlist{
+        margin:0 auto;
+    }
+</style>
+
+<div class="findroom">
+<div id="address"></div>
+
+@section Scripts{ 
+    <script src="~/js/address.js" type="text/babel"></script>
+}
+<br />
+<br />
+<table class="roomlist" border="1" style="align-content:center;width:1000px">
+    <tr>
+        <td colspan="2"><p style="font-size:20px">1 King Bedroom <a style="font-size:15px" asp-area="" asp-controller="Room" asp-action="RoomDetail">Room Detail</a></p>  <img src="~/images/small_king.png" />  <b style="font-size:30px">180 CAD/night</b>
+        <button style="width:250px;color:white;background-color:rebeccapurple;font-size:20px">SELECT</button></td>
+    </tr>
+</table>
+<br />
+<br />
+<table class="roomlist" border="1" style="align-content:center;width:1000px">
+    <tr>
+        <td colspan="2">
+            <p style="font-size:20px">2 Double Bedroom <a style="font-size:15px" asp-area="" asp-controller="Room" asp-action="RoomDetail">Room Detail</a></p>  <img src="/images/small_double.png" />  <b style="font-size:30px">220 CAD/night</b>
+            <button style="width:250px;color:white;background-color:rebeccapurple;font-size:20px">SELECT</button>
+        </td>
+    </tr>
+</table>
+</div>

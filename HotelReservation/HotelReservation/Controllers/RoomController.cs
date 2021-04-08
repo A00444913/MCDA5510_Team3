@@ -8,7 +8,17 @@ namespace HotelReservation.Controllers
 {
     public class RoomController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Findroom()
+        {
+            return View();
+        }
+
+        public IActionResult Roomlist()
+        {
+            return View();
+        }
+
+        public IActionResult RoomDetail()
         {
             return View();
         }
