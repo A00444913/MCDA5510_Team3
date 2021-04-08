@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Booking Room";
+}
+<style>
+    body {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<div class="findroom">
+    <img src="~/images/logo.png" width="200" />
+    <h1>@ViewData["Title"]</h1>
+
+    <p>Dates</p>
+    <input type="date" style="width:250px" class="start_date" />
+    <p>to</p>
+    <input type="date" style="width:250px" class="end_date" />
+    <br />
+    <p>Rooms</p>
+    <input type="number" style="width:250px" class="room_number" placeholder="Number of rooms" min="1" />
+    <p>Guests</p>
+    <input type="number" style="width:250px" class="guest_number" placeholder="Number of guests" min="1" />
+    <a class="nav-link text-dark" asp-area="" asp-controller="Room" asp-action="Roomlist">
+        <input type="button" value="BOOK NOW" />
+    </a>
+</div>
