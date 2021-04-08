@@ -169,3 +169,5 @@ C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\WebAppli
 C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\ref\WebApplication1.dll
 C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\WebApplication1.pdb
 C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\WebApplication1.genruntimeconfig.cache
+C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\Razor\Views\Room\Findroom.cshtml.g.cs
+C:\Users\Johnny\Desktop\MCDA5510_Team3\WebApplication1\obj\Debug\net5.0\Razor\Views\Room\Roomlist.cshtml.g.cs
