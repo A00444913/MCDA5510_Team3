@@ -148,4 +148,7 @@ C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\D
 C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\bin\Debug\net5.0\libman.json
 C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Room\Findroom.cshtml.g.cs
 C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Room\Roomlist.cshtml.g.cs
-C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Room\RoomDetail.cshtml.g.cs
+C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Customer\CustomerInfo.cshtml.g.cs
+C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\PaymentGateway\Payment.cshtml.g.cs
+C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Room\DoubleDetail.cshtml.g.cs
+C:\Users\Johnny\Desktop\hotelreservation\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Room\KingDetail.cshtml.g.cs

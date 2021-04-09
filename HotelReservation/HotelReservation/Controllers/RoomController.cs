@@ -32,5 +32,15 @@ namespace HotelReservation.Controllers
         {
             return View();
         }
+
+        public IActionResult KingDetail()
+        {
+            return View();
+        }
+
+        public IActionResult DoubleDetail()
+        {
+            return View();
+        }
     }
 }
