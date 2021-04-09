@@ -25,6 +25,7 @@ namespace HotelReservation.Controllers
             foreach(Users1 i in _db.Users1s)
             {
                 if (obj.Email.Equals(i.Email) & obj.Password.Equals(i.Password)){
+                    TempData["UId"] = i.Id;
                     return View();
                 }
             }
@@ -33,6 +34,7 @@ namespace HotelReservation.Controllers
 
         public IActionResult Logout()
         {
+            TempData.Remove("UserId");
             return RedirectToAction("Index");
         }
     }

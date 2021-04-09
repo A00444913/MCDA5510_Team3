@@ -1,0 +1,44 @@
+﻿@model HotelReservation.Models.Customer1
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div class="container-fluid">
+
+        <h2>Customer Details</h2>
+        <form class="col-12" asp-controller="Booking" asp-action="AddCustomer">
+            <label class="col-3" asp-for="FirstName"></label>
+            <input class="col-6" asp-for="FirstName" />
+
+            <label class="col-3" asp-for="LastName"></label>
+            <input class="col-6" asp-for="LastName" />
+
+            <label class="col-3" asp-for="Email"></label>
+            <input class="col-6" asp-for="Email" />
+
+            <label class="col-3" asp-for="PhoneNo"></label>
+            <input class="col-6" asp-for="PhoneNo" />
+
+            <label class="col-3" asp-for="StreetNo"></label>
+            <input class="col-6" asp-for="StreetNo" />
+
+            <label class="col-3" asp-for="City"></label>
+            <input class="col-6" asp-for="City" />
+
+            <label class="col-3" asp-for="Province"></label>
+            <input class="col-6" asp-for="Province" />
+
+            <label class="col-3" asp-for="Country"></label>
+            <input class="col-6" asp-for="Country" />
+
+            <label class="col-3" asp-for="PostalCode"></label>
+            <input class=col-6"" asp-for="PostalCode" />
+            </br>
+            <input class="btn-primary" type="submit" />
+
+        </form>
+
+    </div>
+
+    </body>
