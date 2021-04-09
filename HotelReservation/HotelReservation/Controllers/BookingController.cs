@@ -11,24 +11,30 @@ namespace HotelReservation.Controllers
     {
         private hotelContext _db;
 
+        //constructor
         public BookingController(hotelContext db)
         {
             _db = db;
         }
+
+        //Index method
         public IActionResult Index()
         {
             return View();
         }
 
+
+        //room search
         [HttpPost]
         public IActionResult SearchRoom(DateTime From, DateTime To, string city, int room,string type, int guest)
         {
 
+
             TempData["StartDate"] = From;
             TempData["EndDate"] = To;
             TempData["GuestCount"] = guest;
-            TempData["Hid"] = city.Equals("Halifax") ? 1 : city.Equals("Toronto") ? 2 : 3; 
-
+            TempData["Hid"] = city.Equals("Halifax") ? 1 : city.Equals("Toronto") ? 2 : 3;
+            int Testint = 1;
 
             int id;
              id = city.Equals("Halifax") ? 1 : city.Equals("Toronto") ? 2 : 3 ;
@@ -69,22 +75,26 @@ namespace HotelReservation.Controllers
                 return RedirectToAction("RoomList");
         }
 
+
+        //RoomList
         public IActionResult RoomList()
         {
             return View();
         }
 
+        //customerInfo
         public IActionResult CustomerInfo()
         {
             return View();
         }
 
 
+        //AddCusotmer
         [HttpPost]
         public IActionResult AddCustomer(Customer1 obj)
         {
             int id = _db.Customer1s.Max(c => c.CustomerId);
-            TempData["CId"] = id+1;
+            TempData["Cid"] = id+1;
 
             _db.Customer1s.Add(obj);
             _db.SaveChanges();
@@ -94,19 +104,18 @@ namespace HotelReservation.Controllers
 
 
 
-
+        //Payment
         public IActionResult Payment(string paymethod)
         {
             TempData["paymethod"] = paymethod;
-            Bookings1 booking=new Bookings1
-            {
-            Cid = (int)TempData["Cid"],
-            Uid = (int)TempData["Uid"],
-            Hid = (int)TempData["Hid"],
-            StartDate = (DateTime)TempData["StartDate"],
-            EndDate = (DateTime)TempData["EndDate"],
-            GuestCount = (int)TempData["GuestCount"],
-            };
+            Bookings1 booking = new Bookings1();
+
+            booking.Uid = TempData["Uid"] != null ? (int)TempData["Uid"] : 7;
+            booking.Cid = (int)TempData["Cid"];
+            booking.Hid = (int)TempData["Hid"];
+            booking.StartDate = (DateTime)TempData["StartDate"];
+            booking.EndDate = (DateTime)TempData["EndDate"];
+            booking.GuestCount = (int)TempData["GuestCount"];
 
             _db.Bookings1s.Add(booking);
             _db.SaveChanges();

@@ -25,17 +25,22 @@ namespace HotelReservation.Controllers
             foreach(Users1 i in _db.Users1s)
             {
                 if (obj.Email.Equals(i.Email) & obj.Password.Equals(i.Password)){
-                    TempData["UId"] = i.Id;
-                    return View();
+                    TempData["Uid"] = i.Id;
+                    return RedirectToAction("Index","Home");
                 }
             }
-            return RedirectToAction("Index");
+            return Redirect("Index") ;
         }
 
         public IActionResult Logout()
         {
-            TempData.Remove("UserId");
+            TempData.Remove("Uid");
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Error()
+        {
+            return View();
         }
     }
 }

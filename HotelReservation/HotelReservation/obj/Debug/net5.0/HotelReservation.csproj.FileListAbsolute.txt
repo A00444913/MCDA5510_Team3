@@ -153,3 +153,4 @@ F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Booking\CustomerInfo.cshtml.g.cs
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Booking\AddCustomer.cshtml.g.cs
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Booking\Payment.cshtml.g.cs
+F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Login\Error.cshtml.g.cs

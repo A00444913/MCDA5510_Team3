@@ -35,7 +35,14 @@
         <tr>
             <td colspan="2">
                 <p style="font-size:20px">1 King Bedroom <a style="font-size:15px" asp-area="" asp-controller="Booking" asp-action="CustomerInfo">Room Detail</a></p>  <img src="~/images/small_king.png" />  <b style="font-size:30px">180 CAD/night</b>
-                <a asp-controller="Booking" asp-action="CusotmerInfo" class="btn-primary">SELECT</a>
+
+                @if (TempData["Uid"] == null)
+                {
+            <a asp-controller="Login" asp-action="Error" class="btn-primary">SELECT</a>            }
+
+                @if (TempData["Uid"] != null)
+                {
+            <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">SELECT</a>            }
             </td>
         </tr>
     </table>
@@ -45,7 +52,15 @@
         <tr>
             <td colspan="2">
                 <p style="font-size:20px">2 Double Bedroom <a style="font-size:15px" asp-area="" asp-controller="Booking" asp-action="CustomerInfo">Room Detail</a></p>  <img src="/images/small_double.png" />  <b style="font-size:30px">220 CAD/night</b>
-                <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">SELECT</a>
+
+                @if (TempData["Uid"] == null)
+                {
+            <a asp-controller="Login" asp-action="Error" class="btn-primary">SELECT</a>}
+
+                @if (TempData["Uid"] != null)
+                {
+            <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">SELECT</a>}
+
             </td>
         </tr>
     </table>
