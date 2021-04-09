@@ -66,7 +66,12 @@ namespace HotelReservation.Controllers
             }
             TempData["x"] = flag;
 
-                return RedirectToAction("Index");
+                return RedirectToAction("RoomList");
+        }
+
+        public IActionResult RoomList()
+        {
+            return View();
         }
 
         public IActionResult CustomerInfo()
@@ -104,8 +109,8 @@ namespace HotelReservation.Controllers
             };
 
             _db.Bookings1s.Add(booking);
-            TempData["BookingId"] = _db.Bookings1s.Max(c => c.BookingId);
             _db.SaveChanges();
+            TempData["BookingId"] = _db.Bookings1s.Max(c => c.BookingId);
 
             Transaction1 transaction = new Transaction1
             {
