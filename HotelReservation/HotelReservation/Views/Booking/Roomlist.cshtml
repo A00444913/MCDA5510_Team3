@@ -23,7 +23,7 @@
     }
     @if ((int)TempData["x"] == 0)
     {
-        if ((string)TempData["Type"] == "king")
+        @if ((string)TempData["Type"] == "king")
         {
             <br />
             <br />
@@ -31,16 +31,21 @@
                 <tr>
                     <td colspan="2">
                         <p style="font-size:20px">1 King Bedroom <a style="font-size:15px" asp-area="" asp-controller="Booking" asp-action="KingRoom">Room Detail</a></p>  <img src="~/images/small_king.png" />  <b style="font-size:30px">180 CAD/night</b>
-                        <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">
-                            <input type="button" style="width:250px;color:white;background-color:rebeccapurple;font-size:20px" value="SELECT" />
-                        </a>
+
+                        @if(TempData["Uid"] != null)
+                        {
+                    <a asp-controller="Login" asp-action="Error" class="btn-primary">SELECT</a>}
+
+                        @if(TempData["Uid"] == null)
+                        {
+                    <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">SELECT</a>}
                     </td>
                 </tr>
             </table>
             <br />
             <br />
         }
-        if ((string)TempData["Type"] == "Queen")
+        @if ((string)TempData["Type"] == "Queen")
         {
             <br />
             <br />
@@ -48,9 +53,14 @@
                 <tr>
                     <td colspan="2">
                         <p style="font-size:20px">2 Double Bedroom <a style="font-size:15px" asp-area="" asp-controller="Booking" asp-action="DoubleRoom">Room Detail</a></p>  <img src="/images/small_double.png" />  <b style="font-size:30px">220 CAD/night</b>
-                        <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">
-                            <input type="button" style="width:250px;color:white;background-color:rebeccapurple;font-size:20px" value="SELECT" />
-                        </a>
+                        @if (@TempData["Uid"] != null)
+                        {
+                    <a asp-controller="Login" asp-action="Error" class="btn-primary">SELECT</a>}
+
+                        @if (@TempData["Uid"] == null)
+                        {
+                    <a asp-controller="Booking" asp-action="CustomerInfo" class="btn-primary">SELECT</a>}
+
                     </td>
                 </tr>
             </table>
