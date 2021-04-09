@@ -19,5 +19,21 @@ namespace HotelReservation.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login(Users1 obj)
+        {
+            foreach(Users1 i in _db.Users1s)
+            {
+                if (obj.Email.Equals(i.Email) & obj.Password.Equals(i.Password)){
+                    return View();
+                }
+            }
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index");
+        }
     }
 }

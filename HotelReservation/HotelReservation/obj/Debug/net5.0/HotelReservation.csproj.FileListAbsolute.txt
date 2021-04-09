@@ -146,3 +146,4 @@ F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\HotelReservation.pdb
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\HotelReservation.genruntimeconfig.cache
 F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+F:\dotnet\project\MCDA5510_Team3\HotelReservation\HotelReservation\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
