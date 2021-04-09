@@ -12,7 +12,7 @@
     },
     {
       "library": "babel-standalone@6.26.0",
-      "destination": "wwwroot/babel-standalone/"
+      "destination": "wwwroot/babel"
     }
   ]
 }

@@ -1,0 +1,51 @@
+﻿@TempData["x"]
+
+
+@{
+    ViewData["Title"] = "Booking Room";
+}
+<style>
+    body {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<div class="findroom">
+    <div class="container-fluid">
+    <img src="~/images/logo.png" width="200" />
+    <h1>@ViewData["Title"]</h1>
+
+
+
+    <form asp-controller="Booking" asp-action="SearchRoom" method="post">
+    <p style="font-size:25px">Dates</p>
+    <input name="from_date" type="date" style="width:400px" class="start_date" />
+    <p>to</p>
+    <input name="to_date" type="date" style="width:400px" class="end_date" />
+    <br />
+
+    <p style="font-size:25px">Location</p>
+    <select name="city" style="width:400px">
+        <option value="Toronto">Toronto</option>
+        <option value="New York">New york</option>
+        <option value="Halifax">Halifax</option>
+    </select>
+
+    <p style="font-size:25px">Rooms</p>
+    <input name="rooms" type="number" style="width:400px" class="room_number" placeholder="Number of rooms" min="1" />
+    <p style="font-size:25px">Guests</p>
+    <input name="guests" type="number" style="width:400px" class="guest_number" placeholder="Number of guests" min="1" />
+    <br/>
+    <p style="font-size:25px">Type of Room</p>
+        <select name="type" style="width:400px">
+            <option value="king">king size</option>
+            <option value ="Queen">queen size</option>
+        </select> 
+        <br/>
+        <br/>
+        <input type="submit"  style="width:400px;color:white;background-color:rebeccapurple; font-size:20px"/>
+    </form>
+    </div>
+</div>

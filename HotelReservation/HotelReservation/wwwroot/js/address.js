@@ -18,4 +18,4 @@
         )
     }
 }
-ReactDOM.render(<Address />, document.getElementById("address"))
+ReactDOM.render(<Address />, document.getElementById("address"));
