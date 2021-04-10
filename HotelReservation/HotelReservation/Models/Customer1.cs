@@ -49,8 +49,7 @@ namespace HotelReservation.Models
         [RegularExpression(@"^[a-zA-Z0-9]+$", ErrorMessage = "Use letters and numbers only please")]
         public string PostalCode { get; set; }
 
-        [Required(ErrorMessage = "The Phone Number is required")]
-        public string PhoneNo { get; set; }
+        
 
         [Required(ErrorMessage = "The email address is required")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
