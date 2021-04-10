@@ -6,7 +6,7 @@
         return (
             <div>
                 <img src="../images/header.png" />
-                <img src="../images/hotel.png" width="1500px" />
+                <img src="../images/hotel.png" width="1000px" />
             </div>
         )
     }
