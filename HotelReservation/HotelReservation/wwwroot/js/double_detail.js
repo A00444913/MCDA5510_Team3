@@ -20,7 +20,7 @@ class Doubledetail extends React.Component {
                     <span>{this.state.phone}</span>
                 </div>
                 <div>
-                    <h1>Guest Room 1 King</h1>
+                    <h1>Guest Room 2 Double</h1>
                     <p>From <b style={priceStyle}>220 </b><b>CAD/night</b></p>
                     <img src="../images/big_double.png" width="1000px" />
                 </div>

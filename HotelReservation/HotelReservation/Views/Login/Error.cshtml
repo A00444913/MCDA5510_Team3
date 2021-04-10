@@ -4,10 +4,17 @@
 @{
 }
 
+<div class="container-fluid">
+    <h1>Please login to Book rooms </h1>
 
-<p>please login to book rooms</p>
+    <br /><br /><br /><br />
+    <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">
+        <input type="button" style="width:500px;color:white;background-color:rebeccapurple; font-size:20px" value="Login" />
+    </a>
+    <br />
+    <a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">
+        <input type="button" style="width:500px;color:white;background-color:rebeccapurple; font-size:20px" value="Sign up" />
+    </a>
 
 
-<a asp-controller="Login" asp-action="Index" class="btn-light">Login</a>
-
-<a asp-controller="Register" asp-action="Index" class="btn-light">Register</a>
+</div>
