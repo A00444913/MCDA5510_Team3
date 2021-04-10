@@ -30,7 +30,7 @@ namespace HotelReservation.Controllers
                     return RedirectToAction("Index", "Home");
                 }
             }
-            return Redirect("Index");
+            return RedirectToAction("Index");
         }
 
         public IActionResult Logout()

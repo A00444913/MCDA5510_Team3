@@ -33,6 +33,7 @@ namespace HotelReservation.Controllers
             TempData["StartDate"] = From;
             TempData["EndDate"] = To;
             TempData["GuestCount"] = guest;
+            TempData["Room"] = room;
             TempData["Hid"] = city.Equals("Halifax") ? 1 : city.Equals("Toronto") ? 2 : 3;
             int Testint = 1;
 
@@ -141,6 +142,17 @@ namespace HotelReservation.Controllers
             };
             _db.Transaction1s.Add(transaction);
             _db.SaveChanges();
+            TempData["Amount"] = transaction.Amount;
+            int total_amount;
+            if((string)TempData["Type"] == "king")
+            {
+                total_amount = 180 * (int)TempData["Room"];
+            }
+            else
+            {
+                total_amount = 220* (int)TempData["Room"];
+            }
+            TempData["Total_Amount"] = total_amount;
 
             return View();
 
