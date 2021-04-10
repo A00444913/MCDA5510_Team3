@@ -5,7 +5,7 @@
     render() {
         return (
             <div>
-                <img src="../images/header.png" />
+                <img src="../images/header.png" width="1000px"/>
                 <img src="../images/hotel.png" width="1000px" />
             </div>
         )

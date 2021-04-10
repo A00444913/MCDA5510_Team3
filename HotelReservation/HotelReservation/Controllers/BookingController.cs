@@ -9,7 +9,7 @@ namespace HotelReservation.Controllers
 {
     public class BookingController : Controller
     {
-        
+
         private hotelContext _db;
 
         //constructor
@@ -79,8 +79,16 @@ namespace HotelReservation.Controllers
             return RedirectToAction("KingRoom");
             else
                 return RedirectToAction("DoubleRoom")*/
+            if (DateTime.Compare((DateTime)TempData["EndDate"], (DateTime)TempData["StartDate"]) > 0)
+            {
+                return RedirectToAction("RoomList");
+            }
+            else
+            {
+                TempData["DateError"] = "Check out date should after check in date!!";
+                return Redirect("Index");
 
-            return RedirectToAction("RoomList");
+            }
         }
 
         public IActionResult RoomList()
@@ -106,7 +114,7 @@ namespace HotelReservation.Controllers
         public IActionResult AddCustomer(Customer1 obj)
         {
             int id = _db.Customer1s.Max(c => c.CustomerId);
-            TempData["Cid"] = id+1;
+            TempData["Cid"] = id + 1;
 
             _db.Customer1s.Add(obj);
             _db.SaveChanges();
@@ -144,13 +152,13 @@ namespace HotelReservation.Controllers
             _db.SaveChanges();
             TempData["Amount"] = transaction.Amount;
             int total_amount;
-            if((string)TempData["Type"] == "king")
+            if ((string)TempData["Type"] == "king")
             {
                 total_amount = 180 * (int)TempData["Room"];
             }
             else
             {
-                total_amount = 220* (int)TempData["Room"];
+                total_amount = 220 * (int)TempData["Room"];
             }
             TempData["Total_Amount"] = total_amount;
 
