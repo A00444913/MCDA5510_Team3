@@ -5796,23 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Johnny\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gkhur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Johnny\\Desktop\\hotelproject\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+      "projectUniqueName": "C:\\Users\\gkhur\\Desktop\\projects\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
       "projectName": "HotelReservation",
-      "projectPath": "C:\\Users\\Johnny\\Desktop\\hotelproject\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
-      "packagesPath": "C:\\Users\\Johnny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Johnny\\Desktop\\hotelproject\\HotelReservation\\HotelReservation\\obj\\",
+      "projectPath": "C:\\Users\\gkhur\\Desktop\\projects\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+      "packagesPath": "C:\\Users\\gkhur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gkhur\\Desktop\\projects\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Johnny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gkhur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5867,7 +5863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
