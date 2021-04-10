@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace HotelReservation.Controllers
 {
@@ -21,6 +23,7 @@ namespace HotelReservation.Controllers
         //Index method
         public IActionResult Index()
         {
+            IEnumerable<Customer1> customer = _db.Customer1s;
             return View();
         }
 
@@ -28,7 +31,6 @@ namespace HotelReservation.Controllers
         [HttpPost]
         public IActionResult SearchRoom(DateTime From, DateTime To, string city, int room, string type, int guest)
         {
-
             TempData["Type"] = type;
             TempData["StartDate"] = From;
             TempData["EndDate"] = To;
@@ -42,7 +44,7 @@ namespace HotelReservation.Controllers
             IEnumerable<AvailableHotelRoom1> obj = null;
             int flag = 0;
 
-
+            /*
             for (var day = From.Date; day.Date <= To.Date; day = day.AddDays(1))
             {
                 IQueryable<AvailableHotelRoom1> availableHotelRoom1s = _db.AvailableHotelRoom1s.Where(a => a.Date == day && a.Type == type && a.HotelId == id);
@@ -58,20 +60,19 @@ namespace HotelReservation.Controllers
                     }
                 }
 
-                /*
                 if (temp != null && temp.A)
                 {
                     message = "room not availabel";
                     break;
                     
-                }*/
+                }
 
 
                 //  if(temp != null)
                 // obj = obj.Concat(temp);
 
             }
-
+            */
             TempData["x"] = flag;
 
             /*
@@ -106,7 +107,19 @@ namespace HotelReservation.Controllers
         }
         public IActionResult CustomerInfo()
         {
-            return View();
+            
+
+            if (HttpContext.Session.GetString("UserSession") == null)
+            {
+                return RedirectToAction("Error", "Login");
+            }
+            else
+            {
+                var user = JsonConvert.DeserializeObject<Users1>(HttpContext.Session.GetString("UserSession"));
+
+                TempData["Uid"] = user.Id;
+                return View();
+            }
         }
 
 

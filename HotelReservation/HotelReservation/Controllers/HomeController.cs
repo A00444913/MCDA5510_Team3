@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace HotelReservation.Controllers
 {
@@ -20,6 +23,10 @@ namespace HotelReservation.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("UserSession") != null)
+                ViewData["message"] = "1";
+            else
+                ViewData["message"] = "0";
             return View();
         }
 

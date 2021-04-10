@@ -4,11 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace HotelReservation.Controllers
 {
     public class LoginController : Controller
     {
+
         private readonly hotelContext _db;
 
         public LoginController(hotelContext db)
@@ -22,26 +25,31 @@ namespace HotelReservation.Controllers
         [HttpPost]
         public IActionResult Login(Users1 obj)
         {
-            foreach (Users1 i in _db.Users1s)
-            {
-                if (obj.Email.Equals(i.Email) & obj.Password.Equals(i.Password))
+
+
+            var user = _db.Users1s.SingleOrDefault(e => e.Email == obj.Email && e.Password == obj.Password);
+
+            
+                if (user != null)
                 {
-                    TempData["Uid"] = i.Id;
+                    HttpContext.Session.SetString("UserSession", JsonConvert.SerializeObject(user));
                     return RedirectToAction("Index", "Home");
                 }
-            }
+            ViewBag.message = "Please provide correct email and password";
+
             return RedirectToAction("Index");
         }
 
         public IActionResult Logout()
         {
-            TempData.Remove("Uid");
-            return RedirectToAction("Index");
+            HttpContext.Session.Remove("UserSession");
+            return RedirectToAction("Index","Home");
         }
 
         public IActionResult Error()
         {
             return View();
         }
+        
     }
 }

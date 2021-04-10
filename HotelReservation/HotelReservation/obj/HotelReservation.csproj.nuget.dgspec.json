@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Johnny\\Desktop\\hotelhotel\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {}
+    "F:\\smu\\software_development\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Johnny\\Desktop\\hotelhotel\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {
+    "F:\\smu\\software_development\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Johnny\\Desktop\\hotelhotel\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+        "projectUniqueName": "F:\\smu\\software_development\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
         "projectName": "HotelReservation",
-        "projectPath": "C:\\Users\\Johnny\\Desktop\\hotelhotel\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
-        "packagesPath": "C:\\Users\\Johnny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Johnny\\Desktop\\hotelhotel\\HotelReservation\\HotelReservation\\obj\\",
+        "projectPath": "F:\\smu\\software_development\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\HotelReservation.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "F:\\smu\\software_development\\MCDA5510_Team3\\HotelReservation\\HotelReservation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Johnny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.5, )"
@@ -72,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

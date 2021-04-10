@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -18,11 +17,8 @@ namespace HotelReservation.Models
         public int Cid { get; set; }
         public int Uid { get; set; }
         public int Hid { get; set; }
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Please select your check in date")]
         public DateTime StartDate { get; set; }
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Please select your check out date")]
         public DateTime EndDate { get; set; }
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the number of guests")]
         public int GuestCount { get; set; }
         public string Status { get; set; }
 
